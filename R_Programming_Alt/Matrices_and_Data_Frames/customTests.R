@@ -89,7 +89,8 @@ notify <- function() {
   if(e$val == "No") return(TRUE)
   
   ID <- readline_clean("What is your MAT 331 ID number?")
-    
+  code <- 2*ID - 1
+  
   # Get course and lesson names
   course_name <- attr(e$les, "course_name")
   lesson_name <- attr(e$les, "lesson_name")
