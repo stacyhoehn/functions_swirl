@@ -93,6 +93,14 @@ notify <- function() {
     # Get info
     ID <- readline_clean("What is your MAT 331 ID number?")
     
+    message("\nDoes everything look OK?\n")
+-    message("Your ID: ", ID"\n")
+-    
+-    yn <- select.list(c("Yes", "No"), graphics = FALSE)
+-    if(yn == "Yes") good <- TRUE
+-  }
+    
+    
       # Get course and lesson names
   course_name <- attr(e$les, "course_name")
   lesson_name <- attr(e$les, "lesson_name")
