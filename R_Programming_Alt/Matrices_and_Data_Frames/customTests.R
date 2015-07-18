@@ -91,34 +91,17 @@ notify <- function() {
   good <- FALSE
   while(!good) {
     # Get info
-    name <- readline_clean("What is your full name? ")
-    address <- readline_clean("What is the email address of the person you'd like to notify? ")
+    ID <- readline_clean("What is your MAT 331 ID number?")
     
-    # Repeat back to them
-    message("\nDoes everything look good?\n")
-    message("Your name: ", name, "\n", "Send to: ", address)
-    
-    yn <- select.list(c("Yes", "No"), graphics = FALSE)
-    if(yn == "Yes") good <- TRUE
-  }
-  
-  # Get course and lesson names
+      # Get course and lesson names
   course_name <- attr(e$les, "course_name")
   lesson_name <- attr(e$les, "lesson_name")
   
-  subject <- paste(name, "just completed", course_name, "-", lesson_name)
-  body = ""
-  
-  # Send email
-  swirl:::email(address, subject, body)
-  
-  hrule()
-  message("I just tried to create a new email with the following info:\n")
-  message("To: ", address)
-  message("Subject: ", subject)
-  message("Body: <empty>")
-  
-  message("\nIf it didn't work, you can send the same email manually.")
+  subject <- paste(course_name, "-", lesson_name)
+
+hrule()  
+  message("Your code for",subject)
+  message("is: ", code)
   hrule()
   
   # Return TRUE to satisfy swirl and return to course menu
