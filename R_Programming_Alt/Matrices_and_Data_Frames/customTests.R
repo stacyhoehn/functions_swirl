@@ -88,20 +88,9 @@ notify <- function() {
   e <- get("e", parent.frame())
   if(e$val == "No") return(TRUE)
   
-  good <- FALSE
-  while(!good) {
-    # Get info
-    ID <- readline_clean("What is your MAT 331 ID number?")
+  ID <- readline_clean("What is your MAT 331 ID number?")
     
-    message("\nDoes everything look OK?\n")
--    message("Your ID: ", ID)
--    
--    yn <- select.list(c("Yes", "No"), graphics = FALSE)
--    if(yn == "Yes") good <- TRUE
--  }
-    
-    
-      # Get course and lesson names
+  # Get course and lesson names
   course_name <- attr(e$les, "course_name")
   lesson_name <- attr(e$les, "lesson_name")
   
