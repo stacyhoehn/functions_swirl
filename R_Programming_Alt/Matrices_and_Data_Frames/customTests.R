@@ -87,8 +87,8 @@ omnitest <- function(correctExpr=NULL, correctVal=NULL, strict=FALSE){
 notify <- function() {
   e <- get("e", parent.frame())
   if(e$val == "No") return(TRUE)
-  
-  ID <- readline_clean("What is your MAT 331 ID number?")
+  message("What is your MAT 331 ID number? \n")
+  ID <- readinteger()
   code <- 2*ID - 1
   
   # Get course and lesson names
@@ -111,6 +111,12 @@ readline_clean <- function(prompt = "") {
   mes <- stringr::str_c("| ", wrapped, collapse = "\n")
   message(mes)
   readline()
+}
+
+readinteger <- function()
+{ 
+  n <- readline(prompt="Enter an integer: ")
+  return(as.integer(n))
 }
 
 hrule <- function() {
