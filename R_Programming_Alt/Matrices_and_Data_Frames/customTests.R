@@ -94,7 +94,7 @@ notify <- function() {
     ID <- readline_clean("What is your MAT 331 ID number?")
     
     message("\nDoes everything look OK?\n")
--    message("Your ID: ", ID"\n")
+-    message("Your ID: ", ID)
 -    
 -    yn <- select.list(c("Yes", "No"), graphics = FALSE)
 -    if(yn == "Yes") good <- TRUE
