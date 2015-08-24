@@ -250,7 +250,7 @@
   Output: We'll discuss coercion in another lesson, but all it really means that the
     numbers 1, 2, 3, and 4 in the output above are no longer numbers to R, but rather
     characters "1", "2", "3", and "4".
-
+    
 - Class: mult_question
   Output: Would you like to get a completion code for Professor Hoehn?
   CorrectAnswer: NULL
