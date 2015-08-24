@@ -1,7 +1,7 @@
 - Class: meta
   Course: R Programming
   Lesson: Logic
-  Author: Sean Kross
+  Author: 50204
   Type: Standard
   Organization: swirlstats
   Version: 2.2.15
@@ -343,6 +343,10 @@
   AnswerTests: omnitest(correctVal='any(ints == 10)')
   Hint: "any() will evaluate to TRUE if there is one or more TRUE elements in a logical vector."
   
-- Class : text
-  Output: "That's all for this introduction to logic in R. If you really want to see
-    what you can do with logic, check out the control flow lesson!"
+- Class: mult_question
+  Output: Would you like to get a completion code for Professor Hoehn?
+  CorrectAnswer: NULL
+  AnswerChoices: Yes; No
+  AnswerTests: notify()
+  Hint: NULL
+

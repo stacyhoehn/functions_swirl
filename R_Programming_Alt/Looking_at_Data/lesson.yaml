@@ -1,7 +1,7 @@
 - Class: meta
   Course: R Programming
   Lesson: Looking at Data
-  Author: Nick Carchedi
+  Author: 50254
   Type: Standard
   Organization: JHU Biostat
   Version: 2.2.11
@@ -121,7 +121,7 @@
   Output: In this lesson, you learned how to get a feel for the structure and contents of a new dataset using a collection of simple and useful functions. Taking the time to do this upfront can save you time and frustration later on in your analysis.
 
 - Class: mult_question
-  Output: Would you like to inform someone about your successful completion of this lesson?
+  Output: Would you like to get a completion code for Professor Hoehn?
   CorrectAnswer: NULL
   AnswerChoices: Yes; No
   AnswerTests: notify()

@@ -1,7 +1,7 @@
 - Class: meta
   Course: R Programming
   Lesson: Sequences of Numbers
-  Author: Nick Carchedi
+  Author: 50051
   Type: Standard
   Organization: JHU Biostat
   Version: 2.2.0
@@ -169,8 +169,9 @@
     function alters its behavior slightly.
 
 - Class: mult_question
-  Output: Would you like to inform someone about your successful completion of this lesson?
+  Output: Would you like to get a completion code for Professor Hoehn?
   CorrectAnswer: NULL
   AnswerChoices: Yes; No
   AnswerTests: notify()
   Hint: NULL
+

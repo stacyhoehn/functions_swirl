@@ -89,16 +89,18 @@ notify <- function() {
   if(e$val == "No") return(TRUE)
   message("What is your MAT 331 ID number? \n")
   ID <- readinteger()
-  code <- 2*ID - 1
   
   # Get course and lesson names
   course_name <- attr(e$les, "course_name")
   lesson_name <- attr(e$les, "lesson_name")
-  
+  seed <- attr(e$les,"author")
   subject <- paste(course_name, "-", lesson_name)
 
+  if(seed%%2 == 0)
+  { code = seed + 2*ID}
+  else { code = seed - 3*ID}
 hrule()  
-  message("Your code for",subject)
+  message("Your code for ",subject)
   message("is: ", code)
   hrule()
   
@@ -115,7 +117,7 @@ readline_clean <- function(prompt = "") {
 
 readinteger <- function()
 { 
-  n <- readline(prompt="Enter an integer: ")
+  n <- readline(prompt="Enter your ID: ")
   return(as.integer(n))
 }
 
