@@ -192,12 +192,6 @@
     you would type my_name <- c(my_char, "Swirl").
 
 - Class: cmd_question
-  Output: Take a look at the contents of my_name.
-  CorrectAnswer: my_name
-  AnswerTests: omnitest(correctExpr='my_name')
-  Hint: Type my_name and press Enter to view its contents.
-
-- Class: cmd_question
   Output: Now, use the paste() function once more to join the words in my_name together
     into a single character string. Don't forget to say collapse = " "!
   CorrectAnswer: paste(my_name, collapse = " ")

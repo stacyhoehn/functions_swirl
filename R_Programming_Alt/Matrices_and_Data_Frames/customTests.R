@@ -124,4 +124,3 @@ readinteger <- function()
 hrule <- function() {
   message("\n", paste0(rep("#", getOption("width") - 2), collapse = ""), "\n")
 }
-
